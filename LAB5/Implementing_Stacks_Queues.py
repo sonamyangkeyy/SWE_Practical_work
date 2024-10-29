@@ -212,4 +212,3 @@ def infix_to_postfix(expression):
 infix_expression = "W * ( X + Y ) - Z"
 postfix_expression = infix_to_postfix(infix_expression)
 print(f"Postfix: {postfix_expression}")
-
