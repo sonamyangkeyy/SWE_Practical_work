@@ -1,5 +1,3 @@
-
-
 #Step 1: Define the Node Class
 class Node:
     def __init__(self, value):
