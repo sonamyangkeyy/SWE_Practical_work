@@ -255,7 +255,7 @@ Complexity
 Time Complexity: O(n), where n is the number of nodes, since each node is visited once.
 Space Complexity: O(h), where h is the height of the tree, due to recursion.
 
-## 8
+## LAB8
 # Exercises
 # 1
 In-Place: Uses the same array in order to sort it. Time complexity: Average o(nlog n), worst o(n2). Space complexity: o(log n)due to recursion.
@@ -275,7 +275,7 @@ Merge Sort: Explains how merging of subarrays is done.
 Animation: The sorting steps are made obvious by bar charts.
 
 
-## 9
+## LAB9
 # Exercises
 # 1
 This code is a class called Graph, which creates a simple undirected graph where we can add edges, print the struct, BFS through the graph, and find the shortest path between two nodes.
