@@ -254,3 +254,66 @@ Check Right Subtree: Recursively check the right child.
 Complexity
 Time Complexity: O(n), where n is the number of nodes, since each node is visited once.
 Space Complexity: O(h), where h is the height of the tree, due to recursion.
+
+## 8
+# Exercises
+# 1
+In-Place: Uses the same array in order to sort it. Time complexity: Average o(nlog n), worst o(n2). Space complexity: o(log n)due to recursion.
+
+# 2
+Early Exit: Stops sorting if there are no changes made during a pass-through.
+Efficiency: It is better suited for the cases where the array is nearly sorted.
+
+# 3
+Insertion Sort: Small subarrays are well handled especially when they are smaller than or equal to 10.
+Merge Sort: Organizes larger arrays, thus improving the general performance.
+Hybrid Approach: The flow enhanced scheme combines the algorithm of both First flow and Improved flow for the most efficiency.
+
+# 4
+Bubble Sort: Enables visualization of every swap performed in the course of sorting.
+Merge Sort: Explains how merging of subarrays is done.
+Animation: The sorting steps are made obvious by bar charts.
+
+
+## 9
+# Exercises
+# 1
+This code is a class called Graph, which creates a simple undirected graph where we can add edges, print the struct, BFS through the graph, and find the shortest path between two nodes.
+Key Components
+Graph Initialization:
+Graph is in form of dictionary with keys that are vertices while values in the list are the neighboring vertices of the key ( self.graph).
+
+Adding Edges:
+The has_model member function returns whether or not there is a model specified; it takes no arguments and returns a boolean value, while the add_edge(u, v) method creates an undirected edge between the vertices u and v.
+
+Printing the Graph:
+Each vertex and neighbors are printed by the print_graph() method.
+
+Breadth-First Search (BFS):
+The bfs(start) method traverses the graph from the start vertex to all other vertex and prints the vertex it visits.
+
+Finding the Shortest Path:
+The required shortest_path(start, end) utilises the BFS algorithm to find and output the shortest path from the start node to the end or None otherwise.
+
+# 2
+Graph Initialization: Graph DB is in the form of an adjacency list for a set of keys.
+Adding Edges: Edges are created by the add_edge method.
+Cycle Detection: Thus, the has_cycle method has been designed to use the Depth First Search (DFS) to look for cycles. It simply tags vertices as visited and also makes a check if a vertex has been visited that is not the parent.
+Example Usage: Finally, the method adds edges, looks for cycles and then prints the result.
+
+# 3
+Graph Representation: Specifically, the graph is needed to be stored as an adjacency list containing not only the info about the edges but also the extra weights.
+Dijkstra's Algorithm: Uses a priority queue to determine the least cost path from a start node to all other nodes.
+Output: Returns a dictionary of the shortest distances from the starting vertex given as an attribute.
+
+# 4
+Graph Representation:
+In this representation the graph is an adjacency list, which means that keys are vertices, and values are lists of adjacent vertices.
+Bipartite Check Using BFS:
+The is_bipartite() method starts with color_dict to keep the tracks of the colors occurred for each vertex.
+For each uncolored vertex, it starts a BFS:
+Colors the starting vertex.
+For each neighbor, it checks:
+If it is not colored, it assigns the current color (alternate) and enQueue it.
+If already colored with the same color as the current vertex, IT RETURNS False as it means that the graph is not bipartite.
+
